@@ -18,15 +18,24 @@
   position: relative;
 }
 
+#btn-search {
+  cursor: pointer;
+}
+
 .search-icon {
   position: absolute;
   top: 30%;
   left: 3%;
   color: #b3b3b3;
   font-size: 1.4rem;
+  transition: 0.2s ease-out;
 }
 
-.search-input {
+.search-icon:hover {
+  color: #ffffff;
+}
+
+#search-input {
   font-family: "Poppins", sans-serif;
   min-width: 30rem;
   height: 4rem;
@@ -39,16 +48,60 @@
   caret-color: #1db954;
 }
 
-.search-input:focus {
+#search-input:focus {
   border: 1px solid #1db954;
   box-shadow: 0 0 0 0.2rem rgba(29, 185, 84, 0.3);
 }
 
-.search-input::placeholder {
+#search-input::placeholder {
   color: #b3b3b3;
 }
 
 .divisor-line {
   border: 0.1rem solid #353b49;
   margin: 2rem 0;
+}
+
+#result {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 2rem 2rem;
+}
+
+.photo {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 1rem;
+}
+
+.artist-dates {
+  margin-left: 2rem;
+  flex-grow: 1;
+}
+
+.music {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-bottom: 0.3rem;
+}
+
+.album {
+  color: #b3b3b3;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.btn-play {
+  margin-left: auto;
+  background-color: #1db954;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+
+.btn-play:hover {
+  background-color: #2bf070;
 }

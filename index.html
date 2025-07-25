@@ -28,24 +28,28 @@
       <div class="search-container">
         <h1 class="title">BeatFinder</h1>
         <div class="search-area">
-          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <button id="btn-search">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          </button>
           <input
             type="search"
-            class="search-input"
             id="search-input"
             placeholder="Procure músicas, artistas, álbuns"
           />
         </div>
       </div>
       <div class="divisor-line"></div>
-      <div class="result">
-        <img src="https://placecats.com/300/200" alt="" />
+      <div id="result">
+        <img src="" alt="" class="photo" />
         <div class="artist-dates">
-          <p class="music">Música 1</p>
-          <p class="album">Artista 1</p>
+          <p class="music"></p>
+          <p class="album"></p>
         </div>
-        <button>Play</button>
+        <button class="btn-play">
+          <i class="fa-solid fa-play play-icon"></i>
+        </button>
       </div>
+      <script src="./src/js/index.js"></script>
     </main>
   </body>
 </html>
