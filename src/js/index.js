@@ -5,7 +5,6 @@ const loader = document.getElementById("loader");
 const resultsDiv = document.getElementById("result");
 
 const audioPlayer = new Audio();
-audioPlayer.volume = 0.3;
 let currentPlayingBtn = null;
 
 async function searchMusic() {
