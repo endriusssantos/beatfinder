@@ -20,6 +20,10 @@ body {
   padding: 3rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 button {
   background: none;
   border: none;

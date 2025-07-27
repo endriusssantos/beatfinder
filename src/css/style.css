@@ -14,7 +14,14 @@
 }
 
 .title {
+  color: #ffffff;
   font-size: 3rem;
+  font-weight: 600;
+  transition: 0.2s ease-out;
+}
+
+.title:hover {
+  color: #1db954;
 }
 
 .search-area {
@@ -66,6 +73,18 @@
   margin: 2rem 0;
 }
 
+.loader {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  font-size: 2rem;
+  color: #1db954;
+}
+
+.hidden {
+  display: none;
+}
+
 #result {
   display: none;
   flex-direction: column;
@@ -114,4 +133,9 @@
 
 .btn-play:hover {
   background-color: #2bf070;
+}
+
+.no-result {
+  color: #b3b3b3;
+  font-size: 1.4rem;
 }
